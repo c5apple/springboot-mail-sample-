@@ -10,3 +10,5 @@ spring:
           auth: true
           starttls:
             enable: true
+  thymeleaf:
+    check-template-location: false

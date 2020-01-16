@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<h2 th:inline="text">[[${name}]]様</h2>
+	<ul>
+		<li th:each="item,stat : ${itemList}">
+			<span th:text="${stat.count}"></span>&nbsp;
+			<span th:text="${item}"></span>&nbsp;
+		</li>
+	</ul>
+</body>
+</html>
